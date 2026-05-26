@@ -1,124 +1,161 @@
-# Academic Progression Web App
+# Academic Progression Monitoring System
 
 ## Overview
 
-The **Academic Progression Monitoring Web App** allows students and administrators to track academic progression, manage student records, grades, modules, and communicate through messaging features. The application supports both student and admin roles, with a different set of permissions for each.
+A full-stack web application designed to help students and administrators monitor academic progression, manage grades and modules, and communicate through an integrated messaging system.
 
-This app is built using **Node.js** and **MySQL** for the backend, with **EJS** templates for rendering dynamic content in the frontend.
+The application supports role-based authentication, student performance tracking, administrative management tools, and CSV data uploads.
+
+Built using Node.js, Express.js, MySQL, and EJS.
+
+---
 
 ## Features
 
-### Student Features:
+### Student Features
+- Secure login system
 - View and edit personal profile
-- Track academic progression with grades and credits
+- Track grades and academic progression
+- Monitor credits and module performance
 - Send and receive messages
 
-### Admin Features:
-- Manage student records (add, edit, delete)
-- Manage modules (add, edit, delete)
-- View student grades and academic progression
-- Send messages to students
+### Admin Features
+- Add, edit, and delete student records
+- Manage modules and grades
 - Upload students via CSV
+- View academic progression data
+- Send messages to students
+
+---
 
 ## Technologies Used
 
-- **Backend**:
-  - Node.js
-  - Express.js
-  - MySQL
-  - Multer (for CSV upload)
-  - EJS (for dynamic page rendering)
+### Backend
+- Node.js
+- Express.js
+- MySQL
+- Multer
+- Express Sessions
 
-- **Frontend**:
-  - HTML
-  - CSS (Bootstrap for styling)
-  - JavaScript
+### Frontend
+- EJS
+- Bootstrap
+- HTML
+- CSS
+- JavaScript
 
-## Setup Instructions
+---
 
-### 1. Clone the repository
+## Key Concepts Demonstrated
 
-Clone this repository to your local machine:
+- Full-stack web development
+- CRUD functionality
+- Authentication & session handling
+- Role-based access control
+- SQL database design
+- CSV upload handling
+- Dynamic server-side rendering
+
+---
+
+## Installation
+
+Clone the repository:
 
 ```bash
-git clone https://gitlab.eeecs.qub.ac.uk/40449210/academic-progression-app.git
+git clone https://github.com/YOUR_USERNAME/academic-progression-monitoring-system.git
+```
 
+Navigate into the project directory:
 
+```bash
+cd academic-progression-monitoring-system
+```
 
-## 2. Install dependencies
+Install dependencies:
 
-Navigate to the project directory and install the dependencies:
-
-cd academic-progression-app
+```bash
 npm install
+```
 
+---
 
+## Database Setup
 
-## 3. Set up the Database
+Create a MySQL database and import the provided SQL file:
 
-Create a MySQL database then import the provided 40449210.sql file to set up the tables in the database.
+```bash
+mysql -u root -p < database.sql
+```
 
-mysql -u root -p < 40449210.sql
+---
 
+## Environment Variables
 
+Create a `.env` file in the root directory:
 
-## 4. Set up the .env file (optional)
-If you would like to use environment variables, create a .environment file in the root directory with the following content:
-
+```env
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=academic_progression_db
+```
 
-This will allow you to use the correct database credentials.
+---
 
+## Running the Application
 
+Start the application:
 
-## 5. Start the app
+```bash
+npm start
+```
 
-Run the following to start the web app:
-npm start (or npx nodemon index.js if using nodemon).
+Or with nodemon:
 
-The app will be accessible on http://localhost:3000.
+```bash
+npx nodemon index.js
+```
 
+The application will run on:
 
+```text
+http://localhost:3000
+```
 
+---
 
-## Login Credentials
+## Demo Credentials
 
-Admin Login
+### Admin Account
 - Username: tester
 - Password: ThisIsATest123
 
-Student Login
+### Student Account
 - Username: RyanAdams123
 - Password: RyanPassword123
 
-If you would like to change these credentials you can create new users via the admin dashboard or do this in the database directly.
+---
 
+## Future Improvements
 
+- Cloud deployment
+- Improved analytics dashboard
+- Enhanced authentication/security
+- Mobile responsive UI improvements
+- Email notifications
+- Automated testing
 
-## Folder structure
+---
 
-After cloning the repository:
+## Screenshots
 
-40449210/
-├── source/
-│   ├── webapp/
-├── 40449210.sql
-├── gitlog.txt
-└── 40449210.pdf
+_Add screenshots of the login page, dashboards, messaging system, and progression tracking here._
 
+---
 
+## Author
 
-## How to run this web app
-1. Clone the repository to your local machine
-2. Install dependencies using npm install.
-3. Set up the MySQL database and import 40449210.sql.
-4. Run the application using npm start.
-5. Access the app at http://localhost:3000.
+Caolan McCallion
 
-
-
-### Some notes:
-1. **Login Credentials**: The **admin** and **student** credentials are pre-set, but the examiner can modify these through the admin dashboard or in the database directly if necessary.
+MSc Software Development Graduate — Queen’s University Belfast
