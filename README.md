@@ -148,12 +148,6 @@ http://localhost:3000
 
 ---
 
-## Screenshots
-
-_Add screenshots of the login page, dashboards, messaging system, and progression tracking here._
-
----
-
 ## Author
 
 Caolan McCallion
